@@ -1,0 +1,17 @@
+#include <stdio.h>
+void printMultiplicationTable(int num, int limit) {
+    for (int i = 1; i <= limit; i++) {
+        printf("%d x %d = %d\n", num, i, num * i);
+    }
+}
+
+int main() {
+    int num, limit;
+    printf("Enter a number to print its multiplication table: ");
+    scanf("%d", &num);
+    printf("Enter the limit: ");
+    scanf("%d", &limit);
+    printf("Multiplication table of %d up to %d:\n", num, limit);
+    printMultiplicationTable(num, limit);
+    return 0;
+}
